@@ -1,0 +1,11 @@
+Start
+SET MysteryNumber TO 3
+SEND 'Please enter guess number' TO DISPLAY'
+RECIEVE TheGuessNumber From Keyboard
+IF TheGuessNumber >10 THEN
+  SENT 'the bigger number'
+  ElSE IF MysteryNumber= correctNumber THEN 
+    SEND 'Well done! You guessed correctly' TO DISPLAY
+    ELSE IF MysteryNumber= wrongNumber THEN
+      SEND 'Bad luck! You gussed wrong' TO DISPLAY
+END IF END IF
